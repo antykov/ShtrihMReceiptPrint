@@ -29,6 +29,8 @@ namespace ShtrihMReceiptPrint
             comboBoxBaudRate.SelectedIndex = Math.Max(0, comboBoxBaudRate.Items.IndexOf(AppSettings.settings.DeviceBaudRate.ToString()));
 
             textBoxPassword.Text = AppSettings.settings.DevicePassword.ToString();
+            numericQRCodeDotSize.Value = AppSettings.settings.QRCodeDotSize;
+            numericQRCodeCorrectionLevel.Value = AppSettings.settings.QRCodeCorrectionLevel;
 
             textCompany.Text = AppSettings.settings.CompanyName;
             textCompanyINN.Text = AppSettings.settings.CompanyINN;
@@ -94,6 +96,9 @@ namespace ShtrihMReceiptPrint
             AppSettings.settings.DeviceComNumber = comboBoxComPort.SelectedIndex + 1;
             AppSettings.settings.DeviceBaudRate = DataModule.StrToIntDef((string)comboBoxBaudRate.SelectedItem, 115200);
             AppSettings.settings.DevicePassword = DataModule.StrToIntDef(textBoxPassword.Text, 30);
+
+            AppSettings.settings.QRCodeDotSize = (int)numericQRCodeDotSize.Value;
+            AppSettings.settings.QRCodeCorrectionLevel = (int)numericQRCodeCorrectionLevel.Value;
 
             AppSettings.settings.CompanyName = textCompany.Text;
             AppSettings.settings.CompanyINN = textCompanyINN.Text;

@@ -59,11 +59,18 @@
             this.labelSeparator = new System.Windows.Forms.Label();
             this.labelCompanyAddress = new System.Windows.Forms.Label();
             this.textCompanyAddress = new System.Windows.Forms.TextBox();
+            this.numericQRCodeDotSize = new System.Windows.Forms.NumericUpDown();
+            this.labelQRCodeDotSize = new System.Windows.Forms.Label();
+            this.labelQRCode = new System.Windows.Forms.Label();
+            this.numericQRCodeCorrectionLevel = new System.Windows.Forms.NumericUpDown();
+            this.labelQRCodeCorrectionLevel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.numericQRCodeDotSize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericQRCodeCorrectionLevel)).BeginInit();
             this.SuspendLayout();
             // 
             // textCompany
             // 
-            this.textCompany.Location = new System.Drawing.Point(90, 48);
+            this.textCompany.Location = new System.Drawing.Point(90, 77);
             this.textCompany.Name = "textCompany";
             this.textCompany.Size = new System.Drawing.Size(232, 20);
             this.textCompany.TabIndex = 0;
@@ -71,7 +78,7 @@
             // labelCompany
             // 
             this.labelCompany.AutoSize = true;
-            this.labelCompany.Location = new System.Drawing.Point(7, 51);
+            this.labelCompany.Location = new System.Drawing.Point(7, 80);
             this.labelCompany.Name = "labelCompany";
             this.labelCompany.Size = new System.Drawing.Size(77, 13);
             this.labelCompany.TabIndex = 1;
@@ -80,7 +87,7 @@
             // labelCompanyINN
             // 
             this.labelCompanyINN.AutoSize = true;
-            this.labelCompanyINN.Location = new System.Drawing.Point(328, 51);
+            this.labelCompanyINN.Location = new System.Drawing.Point(328, 80);
             this.labelCompanyINN.Name = "labelCompanyINN";
             this.labelCompanyINN.Size = new System.Drawing.Size(34, 13);
             this.labelCompanyINN.TabIndex = 3;
@@ -88,7 +95,7 @@
             // 
             // textCompanyINN
             // 
-            this.textCompanyINN.Location = new System.Drawing.Point(378, 48);
+            this.textCompanyINN.Location = new System.Drawing.Point(378, 77);
             this.textCompanyINN.Name = "textCompanyINN";
             this.textCompanyINN.Size = new System.Drawing.Size(90, 20);
             this.textCompanyINN.TabIndex = 1;
@@ -96,7 +103,7 @@
             // labelCashier
             // 
             this.labelCashier.AutoSize = true;
-            this.labelCashier.Location = new System.Drawing.Point(7, 102);
+            this.labelCashier.Location = new System.Drawing.Point(7, 131);
             this.labelCashier.Name = "labelCashier";
             this.labelCashier.Size = new System.Drawing.Size(47, 13);
             this.labelCashier.TabIndex = 5;
@@ -104,7 +111,7 @@
             // 
             // textCashier
             // 
-            this.textCashier.Location = new System.Drawing.Point(90, 99);
+            this.textCashier.Location = new System.Drawing.Point(90, 128);
             this.textCashier.Name = "textCashier";
             this.textCashier.Size = new System.Drawing.Size(378, 20);
             this.textCashier.TabIndex = 3;
@@ -112,7 +119,7 @@
             // labelFactoryNumber
             // 
             this.labelFactoryNumber.AutoSize = true;
-            this.labelFactoryNumber.Location = new System.Drawing.Point(7, 127);
+            this.labelFactoryNumber.Location = new System.Drawing.Point(7, 156);
             this.labelFactoryNumber.Name = "labelFactoryNumber";
             this.labelFactoryNumber.Size = new System.Drawing.Size(49, 13);
             this.labelFactoryNumber.TabIndex = 7;
@@ -120,7 +127,7 @@
             // 
             // textFactoryNumber
             // 
-            this.textFactoryNumber.Location = new System.Drawing.Point(90, 124);
+            this.textFactoryNumber.Location = new System.Drawing.Point(90, 153);
             this.textFactoryNumber.Name = "textFactoryNumber";
             this.textFactoryNumber.Size = new System.Drawing.Size(378, 20);
             this.textFactoryNumber.TabIndex = 4;
@@ -128,7 +135,7 @@
             // labelRegistrationNumber
             // 
             this.labelRegistrationNumber.AutoSize = true;
-            this.labelRegistrationNumber.Location = new System.Drawing.Point(7, 153);
+            this.labelRegistrationNumber.Location = new System.Drawing.Point(7, 182);
             this.labelRegistrationNumber.Name = "labelRegistrationNumber";
             this.labelRegistrationNumber.Size = new System.Drawing.Size(49, 13);
             this.labelRegistrationNumber.TabIndex = 9;
@@ -136,7 +143,7 @@
             // 
             // textRegistrationNumber
             // 
-            this.textRegistrationNumber.Location = new System.Drawing.Point(90, 150);
+            this.textRegistrationNumber.Location = new System.Drawing.Point(90, 179);
             this.textRegistrationNumber.Name = "textRegistrationNumber";
             this.textRegistrationNumber.Size = new System.Drawing.Size(378, 20);
             this.textRegistrationNumber.TabIndex = 5;
@@ -144,7 +151,7 @@
             // labelFiscalNumber
             // 
             this.labelFiscalNumber.AutoSize = true;
-            this.labelFiscalNumber.Location = new System.Drawing.Point(7, 179);
+            this.labelFiscalNumber.Location = new System.Drawing.Point(7, 208);
             this.labelFiscalNumber.Name = "labelFiscalNumber";
             this.labelFiscalNumber.Size = new System.Drawing.Size(29, 13);
             this.labelFiscalNumber.TabIndex = 11;
@@ -152,7 +159,7 @@
             // 
             // textFiscalNumber
             // 
-            this.textFiscalNumber.Location = new System.Drawing.Point(90, 176);
+            this.textFiscalNumber.Location = new System.Drawing.Point(90, 205);
             this.textFiscalNumber.Name = "textFiscalNumber";
             this.textFiscalNumber.Size = new System.Drawing.Size(378, 20);
             this.textFiscalNumber.TabIndex = 6;
@@ -160,7 +167,7 @@
             // labelFiscalSign
             // 
             this.labelFiscalSign.AutoSize = true;
-            this.labelFiscalSign.Location = new System.Drawing.Point(7, 205);
+            this.labelFiscalSign.Location = new System.Drawing.Point(7, 234);
             this.labelFiscalSign.Name = "labelFiscalSign";
             this.labelFiscalSign.Size = new System.Drawing.Size(29, 13);
             this.labelFiscalSign.TabIndex = 13;
@@ -168,7 +175,7 @@
             // 
             // textFiscalSign
             // 
-            this.textFiscalSign.Location = new System.Drawing.Point(90, 202);
+            this.textFiscalSign.Location = new System.Drawing.Point(90, 231);
             this.textFiscalSign.Name = "textFiscalSign";
             this.textFiscalSign.Size = new System.Drawing.Size(378, 20);
             this.textFiscalSign.TabIndex = 7;
@@ -177,7 +184,7 @@
             // 
             this.comboBoxProducts.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxProducts.FormattingEnabled = true;
-            this.comboBoxProducts.Location = new System.Drawing.Point(90, 228);
+            this.comboBoxProducts.Location = new System.Drawing.Point(90, 257);
             this.comboBoxProducts.Name = "comboBoxProducts";
             this.comboBoxProducts.Size = new System.Drawing.Size(313, 21);
             this.comboBoxProducts.TabIndex = 8;
@@ -185,7 +192,7 @@
             // labelProducts
             // 
             this.labelProducts.AutoSize = true;
-            this.labelProducts.Location = new System.Drawing.Point(7, 231);
+            this.labelProducts.Location = new System.Drawing.Point(7, 260);
             this.labelProducts.Name = "labelProducts";
             this.labelProducts.Size = new System.Drawing.Size(49, 13);
             this.labelProducts.TabIndex = 15;
@@ -193,7 +200,7 @@
             // 
             // buttonAddProduct
             // 
-            this.buttonAddProduct.Location = new System.Drawing.Point(403, 227);
+            this.buttonAddProduct.Location = new System.Drawing.Point(403, 256);
             this.buttonAddProduct.Name = "buttonAddProduct";
             this.buttonAddProduct.Size = new System.Drawing.Size(23, 23);
             this.buttonAddProduct.TabIndex = 9;
@@ -203,7 +210,7 @@
             // 
             // buttonDeleteProduct
             // 
-            this.buttonDeleteProduct.Location = new System.Drawing.Point(424, 227);
+            this.buttonDeleteProduct.Location = new System.Drawing.Point(424, 256);
             this.buttonDeleteProduct.Name = "buttonDeleteProduct";
             this.buttonDeleteProduct.Size = new System.Drawing.Size(23, 23);
             this.buttonDeleteProduct.TabIndex = 10;
@@ -213,7 +220,7 @@
             // 
             // buttonEditProduct
             // 
-            this.buttonEditProduct.Location = new System.Drawing.Point(445, 227);
+            this.buttonEditProduct.Location = new System.Drawing.Point(445, 256);
             this.buttonEditProduct.Name = "buttonEditProduct";
             this.buttonEditProduct.Size = new System.Drawing.Size(23, 23);
             this.buttonEditProduct.TabIndex = 11;
@@ -224,7 +231,7 @@
             // buttonOK
             // 
             this.buttonOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.buttonOK.Location = new System.Drawing.Point(262, 256);
+            this.buttonOK.Location = new System.Drawing.Point(262, 285);
             this.buttonOK.Name = "buttonOK";
             this.buttonOK.Size = new System.Drawing.Size(100, 23);
             this.buttonOK.TabIndex = 12;
@@ -235,7 +242,7 @@
             // buttonCancel
             // 
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Location = new System.Drawing.Point(368, 256);
+            this.buttonCancel.Location = new System.Drawing.Point(368, 285);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(100, 23);
             this.buttonCancel.TabIndex = 13;
@@ -244,7 +251,7 @@
             // 
             // buttonShowPrinterSettings
             // 
-            this.buttonShowPrinterSettings.Location = new System.Drawing.Point(90, 256);
+            this.buttonShowPrinterSettings.Location = new System.Drawing.Point(90, 285);
             this.buttonShowPrinterSettings.Name = "buttonShowPrinterSettings";
             this.buttonShowPrinterSettings.Size = new System.Drawing.Size(166, 23);
             this.buttonShowPrinterSettings.TabIndex = 14;
@@ -315,7 +322,7 @@
             // labelSeparator
             // 
             this.labelSeparator.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelSeparator.Location = new System.Drawing.Point(87, 39);
+            this.labelSeparator.Location = new System.Drawing.Point(87, 67);
             this.labelSeparator.Name = "labelSeparator";
             this.labelSeparator.Size = new System.Drawing.Size(381, 2);
             this.labelSeparator.TabIndex = 29;
@@ -323,7 +330,7 @@
             // labelCompanyAddress
             // 
             this.labelCompanyAddress.AutoSize = true;
-            this.labelCompanyAddress.Location = new System.Drawing.Point(7, 77);
+            this.labelCompanyAddress.Location = new System.Drawing.Point(7, 106);
             this.labelCompanyAddress.Name = "labelCompanyAddress";
             this.labelCompanyAddress.Size = new System.Drawing.Size(41, 13);
             this.labelCompanyAddress.TabIndex = 31;
@@ -331,10 +338,76 @@
             // 
             // textCompanyAddress
             // 
-            this.textCompanyAddress.Location = new System.Drawing.Point(90, 74);
+            this.textCompanyAddress.Location = new System.Drawing.Point(90, 103);
             this.textCompanyAddress.Name = "textCompanyAddress";
             this.textCompanyAddress.Size = new System.Drawing.Size(378, 20);
             this.textCompanyAddress.TabIndex = 2;
+            // 
+            // numericQRCodeDotSize
+            // 
+            this.numericQRCodeDotSize.Location = new System.Drawing.Point(275, 39);
+            this.numericQRCodeDotSize.Maximum = new decimal(new int[] {
+            8,
+            0,
+            0,
+            0});
+            this.numericQRCodeDotSize.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.numericQRCodeDotSize.Name = "numericQRCodeDotSize";
+            this.numericQRCodeDotSize.Size = new System.Drawing.Size(47, 20);
+            this.numericQRCodeDotSize.TabIndex = 32;
+            this.numericQRCodeDotSize.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            // 
+            // labelQRCodeDotSize
+            // 
+            this.labelQRCodeDotSize.AutoSize = true;
+            this.labelQRCodeDotSize.Location = new System.Drawing.Point(189, 43);
+            this.labelQRCodeDotSize.Name = "labelQRCodeDotSize";
+            this.labelQRCodeDotSize.Size = new System.Drawing.Size(80, 13);
+            this.labelQRCodeDotSize.TabIndex = 33;
+            this.labelQRCodeDotSize.Text = "Размер точки:";
+            // 
+            // labelQRCode
+            // 
+            this.labelQRCode.AutoSize = true;
+            this.labelQRCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelQRCode.Location = new System.Drawing.Point(102, 43);
+            this.labelQRCode.Name = "labelQRCode";
+            this.labelQRCode.Size = new System.Drawing.Size(62, 13);
+            this.labelQRCode.TabIndex = 34;
+            this.labelQRCode.Text = "QR Code:";
+            // 
+            // numericQRCodeCorrectionLevel
+            // 
+            this.numericQRCodeCorrectionLevel.Location = new System.Drawing.Point(421, 39);
+            this.numericQRCodeCorrectionLevel.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.numericQRCodeCorrectionLevel.Name = "numericQRCodeCorrectionLevel";
+            this.numericQRCodeCorrectionLevel.Size = new System.Drawing.Size(47, 20);
+            this.numericQRCodeCorrectionLevel.TabIndex = 35;
+            this.numericQRCodeCorrectionLevel.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            // 
+            // labelQRCodeCorrectionLevel
+            // 
+            this.labelQRCodeCorrectionLevel.Location = new System.Drawing.Point(328, 36);
+            this.labelQRCodeCorrectionLevel.Name = "labelQRCodeCorrectionLevel";
+            this.labelQRCodeCorrectionLevel.Size = new System.Drawing.Size(87, 27);
+            this.labelQRCodeCorrectionLevel.TabIndex = 36;
+            this.labelQRCodeCorrectionLevel.Text = "Уровень кор- рекции ошибок:";
             // 
             // FormSettings
             // 
@@ -342,7 +415,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancel;
-            this.ClientSize = new System.Drawing.Size(477, 285);
+            this.ClientSize = new System.Drawing.Size(477, 315);
+            this.Controls.Add(this.numericQRCodeCorrectionLevel);
+            this.Controls.Add(this.labelQRCodeCorrectionLevel);
+            this.Controls.Add(this.labelQRCode);
+            this.Controls.Add(this.numericQRCodeDotSize);
+            this.Controls.Add(this.labelQRCodeDotSize);
             this.Controls.Add(this.labelCompanyAddress);
             this.Controls.Add(this.textCompanyAddress);
             this.Controls.Add(this.labelSeparator);
@@ -379,6 +457,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Настройки";
             this.Load += new System.EventHandler(this.FormSettings_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.numericQRCodeDotSize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericQRCodeCorrectionLevel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -417,5 +497,10 @@
         private System.Windows.Forms.Label labelSeparator;
         private System.Windows.Forms.Label labelCompanyAddress;
         private System.Windows.Forms.TextBox textCompanyAddress;
+        private System.Windows.Forms.NumericUpDown numericQRCodeDotSize;
+        private System.Windows.Forms.Label labelQRCodeDotSize;
+        private System.Windows.Forms.Label labelQRCode;
+        private System.Windows.Forms.NumericUpDown numericQRCodeCorrectionLevel;
+        private System.Windows.Forms.Label labelQRCodeCorrectionLevel;
     }
 }

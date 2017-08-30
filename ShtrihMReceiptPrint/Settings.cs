@@ -67,6 +67,11 @@ namespace ShtrihMReceiptPrint
         [XmlElement]
         public string FiscalSign;
 
+        [XmlElement]
+        public int QRCodeDotSize;
+        [XmlElement]
+        public int QRCodeCorrectionLevel;
+
         [XmlArray("Products"), XmlArrayItem("Product")]
         public List<Product> Products;
 
@@ -77,6 +82,9 @@ namespace ShtrihMReceiptPrint
         {
             Products = new List<Product>();
             DeviceFonts = new List<DeviceFont>();
+
+            QRCodeDotSize = 5;
+            QRCodeCorrectionLevel = 2;
         }
 
         public DeviceFont GetFontByType(FontTypes fontType)
@@ -158,7 +166,9 @@ namespace ShtrihMReceiptPrint
                 FactoryNumber = "0000000000000000",
                 RegistrationNumber = "0000000000000000",
                 FiscalNumber = "0000000000000000",
-                FiscalSign = "0000000000"
+                FiscalSign = "0000000000",
+                QRCodeDotSize = 5,
+                QRCodeCorrectionLevel = 2
             };
             templateSettings.Products.Add(new Product
             {

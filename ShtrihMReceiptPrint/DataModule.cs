@@ -184,8 +184,8 @@ namespace ShtrihMReceiptPrint
 
             fr.BarcodeType = 3;
             fr.BarcodeDataLength = qrCodeData.Length;
-            fr.BarcodeParameter3 = 5;
-            fr.BarcodeParameter5 = 2;
+            fr.BarcodeParameter3 = AppSettings.settings.QRCodeDotSize;
+            fr.BarcodeParameter5 = AppSettings.settings.QRCodeCorrectionLevel;
             fr.BarcodeAlignment = 0;
             fr.Print2DBarcode();
 
