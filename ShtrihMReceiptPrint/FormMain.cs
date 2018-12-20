@@ -70,7 +70,10 @@ namespace ShtrihMReceiptPrint
         private void buttonPrint_Click(object sender, EventArgs e)
         {
             if (!DataModule.frConnected)
-                return;
+              return;
+
+            bool is2019 = DateTime.Now >= DateTime.Parse("2019-01-01");
+            int taxRate = is2019 ? 20 : 18;
 
             try
             {
@@ -88,8 +91,12 @@ namespace ShtrihMReceiptPrint
                 DataModule.PrintString(AppSettings.settings.CompanyName, HorizontalAlignment.Center);
                 DataModule.PrintString("ДОБРО ПОЖАЛОВАТЬ !", HorizontalAlignment.Center);
                 DataModule.PrintString("КАССОВЫЙ ЧЕК / ПРИХОД", HorizontalAlignment.Left);
-                DataModule.PrintString($"НОМЕР СМЕНЫ {numericSessionNumber.Value.ToString("000000")}", $"ЧЕК {numericCheckNumber.Value.ToString("000000")}");
-                DataModule.PrintString("CHO", "OCH");
+                if (is2019) {
+                    DataModule.PrintString($"СМЕНА {numericSessionNumber.Value.ToString("000000")}", $"ЧЕК {numericCheckNumber.Value.ToString("000000")}");
+                } else {
+                    DataModule.PrintString($"НОМЕР СМЕНЫ {numericSessionNumber.Value.ToString("000000")}", $"ЧЕК {numericCheckNumber.Value.ToString("000000")}");
+                    DataModule.PrintString("CHO", "OCH");
+                }
                 foreach (var soldProduct in soldProducts)
                 {
                     DataModule.PrintString(soldProduct.Product.Description, HorizontalAlignment.Left);
@@ -98,19 +105,35 @@ namespace ShtrihMReceiptPrint
                         DataModule.GetAmountText(soldProduct.Quantity, soldProduct.Price, "B"));
 
                     totalAmount += Math.Round(soldProduct.Quantity * soldProduct.Price, 2, MidpointRounding.AwayFromZero);
-                    totalTax += Math.Round(soldProduct.Quantity * soldProduct.Price * 18 / 118, 2, MidpointRounding.AwayFromZero);
+                    totalTax += Math.Round(soldProduct.Quantity * soldProduct.Price * taxRate / (100 + taxRate), 2, MidpointRounding.AwayFromZero);
                 }
                 DataModule.PrintString("ИТОГ", DataModule.GetAmountText(totalAmount), FontTypes.Bold);
-                DataModule.PrintString(" B: СУММА НДС 18 %", DataModule.GetTaxText(totalTax));
+                DataModule.PrintString($" B: СУММА НДС {taxRate} %", DataModule.GetTaxText(totalTax));
                 DataModule.PrintString("НАЛИЧНЫМИ", DataModule.GetAmountText(totalAmount));
-                DataModule.PrintString("ЭЛЕКТРОННЫМИ", "=0.00");
-                DataModule.PrintString($"{checkDateTime.ToString("dd/MM/yyyy HH:mm", System.Globalization.CultureInfo.InvariantCulture)} Кассир 1", HorizontalAlignment.Left);
+                if (is2019)
+                {
+                    DataModule.PrintString("CHO", "OCH");
+                    DataModule.PrintString($"{checkDateTime.ToString("dd.MM.yyyy HH:mm", System.Globalization.CultureInfo.InvariantCulture)} Кассир 1", HorizontalAlignment.Left);
+                } else
+                {
+                    DataModule.PrintString("ЭЛЕКТРОННЫМИ", "=0.00");
+                    DataModule.PrintString($"{checkDateTime.ToString("dd/MM/yyyy HH:mm", System.Globalization.CultureInfo.InvariantCulture)} Кассир 1", HorizontalAlignment.Left);
+                }
                 DataModule.PrintString($"ФИО {AppSettings.settings.Cashier}", HorizontalAlignment.Left);
                 DataModule.PrintString("ЗН ККТ", AppSettings.settings.FactoryNumber);
                 DataModule.PrintString("РН ККТ", AppSettings.settings.RegistrationNumber);
                 DataModule.PrintString("САЙТ ФНС", "www.nalog.ru");
-                DataModule.PrintString("АДРЕС РАСЧЕТОВ", HorizontalAlignment.Left);
-                DataModule.PrintString(AppSettings.settings.CompanyAddress, HorizontalAlignment.Left, FontTypes.Regular, true);
+                if (is2019)
+                {
+                    DataModule.PrintString($"ПОЛЬЗОВАТЕЛЬ {AppSettings.settings.CompanyUser}", HorizontalAlignment.Left, FontTypes.Regular, true);
+                    DataModule.PrintString($"АДРЕС РАСЧЕТОВ {AppSettings.settings.CompanyAddress}", HorizontalAlignment.Left, FontTypes.Regular, true);
+                    DataModule.PrintString($"МЕСТО РАСЧЕТОВ {AppSettings.settings.FRPlace}", HorizontalAlignment.Left, FontTypes.Regular, true);
+                }
+                else
+                {
+                    DataModule.PrintString("АДРЕС РАСЧЕТОВ", HorizontalAlignment.Left);
+                    DataModule.PrintString(AppSettings.settings.CompanyAddress, HorizontalAlignment.Left, FontTypes.Regular, true);
+                }
                 DataModule.PrintString("ИНН", AppSettings.settings.CompanyINN);
                 DataModule.PrintString("ФН", AppSettings.settings.FiscalNumber);
                 DataModule.PrintString($"ФД {numericFiscalDocumentNumber.Value.ToString("0000000000")}", $"ФП {AppSettings.settings.FiscalSign}");

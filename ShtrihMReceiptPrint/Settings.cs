@@ -66,6 +66,10 @@ namespace ShtrihMReceiptPrint
         public string FiscalNumber;
         [XmlElement]
         public string FiscalSign;
+        [XmlElement]
+        public string CompanyUser;
+        [XmlElement]
+        public string FRPlace;
 
         [XmlElement]
         public int QRCodeDotSize;
@@ -167,6 +171,8 @@ namespace ShtrihMReceiptPrint
                 RegistrationNumber = "0000000000000000",
                 FiscalNumber = "0000000000000000",
                 FiscalSign = "0000000000",
+                CompanyUser = "ООО \"Общество с ограниченной ответственностью\"",
+                FRPlace = "Место установки",
                 QRCodeDotSize = 5,
                 QRCodeCorrectionLevel = 2
             };

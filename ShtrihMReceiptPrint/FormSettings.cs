@@ -34,6 +34,8 @@ namespace ShtrihMReceiptPrint
 
             textCompany.Text = AppSettings.settings.CompanyName;
             textCompanyINN.Text = AppSettings.settings.CompanyINN;
+            textCompanyUser.Text = AppSettings.settings.CompanyUser;
+            textFRPlace.Text = AppSettings.settings.FRPlace;
             textCompanyAddress.Text = AppSettings.settings.CompanyAddress;
             textCashier.Text = AppSettings.settings.Cashier;
             textFactoryNumber.Text = AppSettings.settings.FactoryNumber;
@@ -102,6 +104,8 @@ namespace ShtrihMReceiptPrint
 
             AppSettings.settings.CompanyName = textCompany.Text;
             AppSettings.settings.CompanyINN = textCompanyINN.Text;
+            AppSettings.settings.CompanyUser = textCompanyUser.Text;
+            AppSettings.settings.FRPlace = textFRPlace.Text;
             AppSettings.settings.CompanyAddress = textCompanyAddress.Text;
             AppSettings.settings.Cashier = textCashier.Text;
             AppSettings.settings.FactoryNumber = textFactoryNumber.Text;

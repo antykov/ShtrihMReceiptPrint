@@ -64,145 +64,166 @@
             this.labelQRCode = new System.Windows.Forms.Label();
             this.numericQRCodeCorrectionLevel = new System.Windows.Forms.NumericUpDown();
             this.labelQRCodeCorrectionLevel = new System.Windows.Forms.Label();
+            this.labelCompanyUser = new System.Windows.Forms.Label();
+            this.textCompanyUser = new System.Windows.Forms.TextBox();
+            this.labelFRPlace = new System.Windows.Forms.Label();
+            this.textFRPlace = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericQRCodeDotSize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericQRCodeCorrectionLevel)).BeginInit();
             this.SuspendLayout();
             // 
             // textCompany
             // 
-            this.textCompany.Location = new System.Drawing.Point(90, 77);
+            this.textCompany.Location = new System.Drawing.Point(120, 95);
+            this.textCompany.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textCompany.Name = "textCompany";
-            this.textCompany.Size = new System.Drawing.Size(232, 20);
+            this.textCompany.Size = new System.Drawing.Size(308, 22);
             this.textCompany.TabIndex = 0;
             // 
             // labelCompany
             // 
             this.labelCompany.AutoSize = true;
-            this.labelCompany.Location = new System.Drawing.Point(7, 80);
+            this.labelCompany.Location = new System.Drawing.Point(9, 98);
+            this.labelCompany.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCompany.Name = "labelCompany";
-            this.labelCompany.Size = new System.Drawing.Size(77, 13);
+            this.labelCompany.Size = new System.Drawing.Size(99, 17);
             this.labelCompany.TabIndex = 1;
             this.labelCompany.Text = "Организация:";
             // 
             // labelCompanyINN
             // 
             this.labelCompanyINN.AutoSize = true;
-            this.labelCompanyINN.Location = new System.Drawing.Point(328, 80);
+            this.labelCompanyINN.Location = new System.Drawing.Point(437, 98);
+            this.labelCompanyINN.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCompanyINN.Name = "labelCompanyINN";
-            this.labelCompanyINN.Size = new System.Drawing.Size(34, 13);
+            this.labelCompanyINN.Size = new System.Drawing.Size(42, 17);
             this.labelCompanyINN.TabIndex = 3;
             this.labelCompanyINN.Text = "ИНН:";
             // 
             // textCompanyINN
             // 
-            this.textCompanyINN.Location = new System.Drawing.Point(378, 77);
+            this.textCompanyINN.Location = new System.Drawing.Point(504, 95);
+            this.textCompanyINN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textCompanyINN.Name = "textCompanyINN";
-            this.textCompanyINN.Size = new System.Drawing.Size(90, 20);
+            this.textCompanyINN.Size = new System.Drawing.Size(119, 22);
             this.textCompanyINN.TabIndex = 1;
             // 
             // labelCashier
             // 
             this.labelCashier.AutoSize = true;
-            this.labelCashier.Location = new System.Drawing.Point(7, 131);
+            this.labelCashier.Location = new System.Drawing.Point(9, 189);
+            this.labelCashier.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCashier.Name = "labelCashier";
-            this.labelCashier.Size = new System.Drawing.Size(47, 13);
+            this.labelCashier.Size = new System.Drawing.Size(59, 17);
             this.labelCashier.TabIndex = 5;
             this.labelCashier.Text = "Кассир:";
             // 
             // textCashier
             // 
-            this.textCashier.Location = new System.Drawing.Point(90, 128);
+            this.textCashier.Location = new System.Drawing.Point(120, 186);
+            this.textCashier.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textCashier.Name = "textCashier";
-            this.textCashier.Size = new System.Drawing.Size(378, 20);
+            this.textCashier.Size = new System.Drawing.Size(503, 22);
             this.textCashier.TabIndex = 3;
             // 
             // labelFactoryNumber
             // 
             this.labelFactoryNumber.AutoSize = true;
-            this.labelFactoryNumber.Location = new System.Drawing.Point(7, 156);
+            this.labelFactoryNumber.Location = new System.Drawing.Point(9, 220);
+            this.labelFactoryNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelFactoryNumber.Name = "labelFactoryNumber";
-            this.labelFactoryNumber.Size = new System.Drawing.Size(49, 13);
+            this.labelFactoryNumber.Size = new System.Drawing.Size(62, 17);
             this.labelFactoryNumber.TabIndex = 7;
             this.labelFactoryNumber.Text = "ЗН ККТ:";
             // 
             // textFactoryNumber
             // 
-            this.textFactoryNumber.Location = new System.Drawing.Point(90, 153);
+            this.textFactoryNumber.Location = new System.Drawing.Point(120, 216);
+            this.textFactoryNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textFactoryNumber.Name = "textFactoryNumber";
-            this.textFactoryNumber.Size = new System.Drawing.Size(378, 20);
+            this.textFactoryNumber.Size = new System.Drawing.Size(503, 22);
             this.textFactoryNumber.TabIndex = 4;
             // 
             // labelRegistrationNumber
             // 
             this.labelRegistrationNumber.AutoSize = true;
-            this.labelRegistrationNumber.Location = new System.Drawing.Point(7, 182);
+            this.labelRegistrationNumber.Location = new System.Drawing.Point(9, 252);
+            this.labelRegistrationNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelRegistrationNumber.Name = "labelRegistrationNumber";
-            this.labelRegistrationNumber.Size = new System.Drawing.Size(49, 13);
+            this.labelRegistrationNumber.Size = new System.Drawing.Size(62, 17);
             this.labelRegistrationNumber.TabIndex = 9;
             this.labelRegistrationNumber.Text = "РН ККТ:";
             // 
             // textRegistrationNumber
             // 
-            this.textRegistrationNumber.Location = new System.Drawing.Point(90, 179);
+            this.textRegistrationNumber.Location = new System.Drawing.Point(120, 248);
+            this.textRegistrationNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textRegistrationNumber.Name = "textRegistrationNumber";
-            this.textRegistrationNumber.Size = new System.Drawing.Size(378, 20);
+            this.textRegistrationNumber.Size = new System.Drawing.Size(503, 22);
             this.textRegistrationNumber.TabIndex = 5;
             // 
             // labelFiscalNumber
             // 
             this.labelFiscalNumber.AutoSize = true;
-            this.labelFiscalNumber.Location = new System.Drawing.Point(7, 208);
+            this.labelFiscalNumber.Location = new System.Drawing.Point(9, 284);
+            this.labelFiscalNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelFiscalNumber.Name = "labelFiscalNumber";
-            this.labelFiscalNumber.Size = new System.Drawing.Size(29, 13);
+            this.labelFiscalNumber.Size = new System.Drawing.Size(35, 17);
             this.labelFiscalNumber.TabIndex = 11;
             this.labelFiscalNumber.Text = "ФН:";
             // 
             // textFiscalNumber
             // 
-            this.textFiscalNumber.Location = new System.Drawing.Point(90, 205);
+            this.textFiscalNumber.Location = new System.Drawing.Point(120, 280);
+            this.textFiscalNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textFiscalNumber.Name = "textFiscalNumber";
-            this.textFiscalNumber.Size = new System.Drawing.Size(378, 20);
+            this.textFiscalNumber.Size = new System.Drawing.Size(503, 22);
             this.textFiscalNumber.TabIndex = 6;
             // 
             // labelFiscalSign
             // 
             this.labelFiscalSign.AutoSize = true;
-            this.labelFiscalSign.Location = new System.Drawing.Point(7, 234);
+            this.labelFiscalSign.Location = new System.Drawing.Point(9, 316);
+            this.labelFiscalSign.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelFiscalSign.Name = "labelFiscalSign";
-            this.labelFiscalSign.Size = new System.Drawing.Size(29, 13);
+            this.labelFiscalSign.Size = new System.Drawing.Size(35, 17);
             this.labelFiscalSign.TabIndex = 13;
             this.labelFiscalSign.Text = "ФП:";
             // 
             // textFiscalSign
             // 
-            this.textFiscalSign.Location = new System.Drawing.Point(90, 231);
+            this.textFiscalSign.Location = new System.Drawing.Point(120, 312);
+            this.textFiscalSign.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textFiscalSign.Name = "textFiscalSign";
-            this.textFiscalSign.Size = new System.Drawing.Size(378, 20);
+            this.textFiscalSign.Size = new System.Drawing.Size(503, 22);
             this.textFiscalSign.TabIndex = 7;
             // 
             // comboBoxProducts
             // 
             this.comboBoxProducts.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxProducts.FormattingEnabled = true;
-            this.comboBoxProducts.Location = new System.Drawing.Point(90, 257);
+            this.comboBoxProducts.Location = new System.Drawing.Point(120, 344);
+            this.comboBoxProducts.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxProducts.Name = "comboBoxProducts";
-            this.comboBoxProducts.Size = new System.Drawing.Size(313, 21);
+            this.comboBoxProducts.Size = new System.Drawing.Size(416, 24);
             this.comboBoxProducts.TabIndex = 8;
             // 
             // labelProducts
             // 
             this.labelProducts.AutoSize = true;
-            this.labelProducts.Location = new System.Drawing.Point(7, 260);
+            this.labelProducts.Location = new System.Drawing.Point(9, 348);
+            this.labelProducts.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelProducts.Name = "labelProducts";
-            this.labelProducts.Size = new System.Drawing.Size(49, 13);
+            this.labelProducts.Size = new System.Drawing.Size(62, 17);
             this.labelProducts.TabIndex = 15;
             this.labelProducts.Text = "Товары:";
             // 
             // buttonAddProduct
             // 
-            this.buttonAddProduct.Location = new System.Drawing.Point(403, 256);
+            this.buttonAddProduct.Location = new System.Drawing.Point(537, 343);
+            this.buttonAddProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonAddProduct.Name = "buttonAddProduct";
-            this.buttonAddProduct.Size = new System.Drawing.Size(23, 23);
+            this.buttonAddProduct.Size = new System.Drawing.Size(31, 28);
             this.buttonAddProduct.TabIndex = 9;
             this.buttonAddProduct.Text = "+";
             this.buttonAddProduct.UseVisualStyleBackColor = true;
@@ -210,9 +231,10 @@
             // 
             // buttonDeleteProduct
             // 
-            this.buttonDeleteProduct.Location = new System.Drawing.Point(424, 256);
+            this.buttonDeleteProduct.Location = new System.Drawing.Point(565, 343);
+            this.buttonDeleteProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonDeleteProduct.Name = "buttonDeleteProduct";
-            this.buttonDeleteProduct.Size = new System.Drawing.Size(23, 23);
+            this.buttonDeleteProduct.Size = new System.Drawing.Size(31, 28);
             this.buttonDeleteProduct.TabIndex = 10;
             this.buttonDeleteProduct.Text = "-";
             this.buttonDeleteProduct.UseVisualStyleBackColor = true;
@@ -220,9 +242,10 @@
             // 
             // buttonEditProduct
             // 
-            this.buttonEditProduct.Location = new System.Drawing.Point(445, 256);
+            this.buttonEditProduct.Location = new System.Drawing.Point(593, 343);
+            this.buttonEditProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonEditProduct.Name = "buttonEditProduct";
-            this.buttonEditProduct.Size = new System.Drawing.Size(23, 23);
+            this.buttonEditProduct.Size = new System.Drawing.Size(31, 28);
             this.buttonEditProduct.TabIndex = 11;
             this.buttonEditProduct.Text = "...";
             this.buttonEditProduct.UseVisualStyleBackColor = true;
@@ -231,9 +254,10 @@
             // buttonOK
             // 
             this.buttonOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.buttonOK.Location = new System.Drawing.Point(262, 285);
+            this.buttonOK.Location = new System.Drawing.Point(349, 379);
+            this.buttonOK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(100, 23);
+            this.buttonOK.Size = new System.Drawing.Size(133, 28);
             this.buttonOK.TabIndex = 12;
             this.buttonOK.Text = "Сохранить";
             this.buttonOK.UseVisualStyleBackColor = true;
@@ -242,18 +266,20 @@
             // buttonCancel
             // 
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Location = new System.Drawing.Point(368, 285);
+            this.buttonCancel.Location = new System.Drawing.Point(491, 379);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(100, 23);
+            this.buttonCancel.Size = new System.Drawing.Size(133, 28);
             this.buttonCancel.TabIndex = 13;
             this.buttonCancel.Text = "Отмена";
             this.buttonCancel.UseVisualStyleBackColor = true;
             // 
             // buttonShowPrinterSettings
             // 
-            this.buttonShowPrinterSettings.Location = new System.Drawing.Point(90, 285);
+            this.buttonShowPrinterSettings.Location = new System.Drawing.Point(120, 379);
+            this.buttonShowPrinterSettings.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonShowPrinterSettings.Name = "buttonShowPrinterSettings";
-            this.buttonShowPrinterSettings.Size = new System.Drawing.Size(166, 23);
+            this.buttonShowPrinterSettings.Size = new System.Drawing.Size(221, 28);
             this.buttonShowPrinterSettings.TabIndex = 14;
             this.buttonShowPrinterSettings.Text = "Настройки принтера...";
             this.buttonShowPrinterSettings.UseVisualStyleBackColor = true;
@@ -271,17 +297,19 @@
             "38400",
             "57600",
             "115200"});
-            this.comboBoxBaudRate.Location = new System.Drawing.Point(234, 12);
+            this.comboBoxBaudRate.Location = new System.Drawing.Point(312, 15);
+            this.comboBoxBaudRate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxBaudRate.Name = "comboBoxBaudRate";
-            this.comboBoxBaudRate.Size = new System.Drawing.Size(88, 21);
+            this.comboBoxBaudRate.Size = new System.Drawing.Size(116, 24);
             this.comboBoxBaudRate.TabIndex = 16;
             // 
             // labelBaudRate
             // 
             this.labelBaudRate.AutoSize = true;
-            this.labelBaudRate.Location = new System.Drawing.Point(170, 16);
+            this.labelBaudRate.Location = new System.Drawing.Point(227, 20);
+            this.labelBaudRate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelBaudRate.Name = "labelBaudRate";
-            this.labelBaudRate.Size = new System.Drawing.Size(58, 13);
+            this.labelBaudRate.Size = new System.Drawing.Size(73, 17);
             this.labelBaudRate.TabIndex = 25;
             this.labelBaudRate.Text = "Скорость:";
             // 
@@ -289,63 +317,71 @@
             // 
             this.comboBoxComPort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxComPort.FormattingEnabled = true;
-            this.comboBoxComPort.Location = new System.Drawing.Point(90, 12);
+            this.comboBoxComPort.Location = new System.Drawing.Point(120, 15);
+            this.comboBoxComPort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxComPort.Name = "comboBoxComPort";
-            this.comboBoxComPort.Size = new System.Drawing.Size(74, 21);
+            this.comboBoxComPort.Size = new System.Drawing.Size(97, 24);
             this.comboBoxComPort.TabIndex = 15;
             // 
             // labelComPort
             // 
             this.labelComPort.AutoSize = true;
-            this.labelComPort.Location = new System.Drawing.Point(7, 16);
+            this.labelComPort.Location = new System.Drawing.Point(9, 20);
+            this.labelComPort.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelComPort.Name = "labelComPort";
-            this.labelComPort.Size = new System.Drawing.Size(60, 13);
+            this.labelComPort.Size = new System.Drawing.Size(79, 17);
             this.labelComPort.TabIndex = 23;
             this.labelComPort.Text = "COM-порт:";
             // 
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
-            this.labelPassword.Location = new System.Drawing.Point(328, 16);
+            this.labelPassword.Location = new System.Drawing.Point(437, 20);
+            this.labelPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(48, 13);
+            this.labelPassword.Size = new System.Drawing.Size(61, 17);
             this.labelPassword.TabIndex = 28;
             this.labelPassword.Text = "Пароль:";
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(378, 12);
+            this.textBoxPassword.Location = new System.Drawing.Point(504, 15);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(90, 20);
+            this.textBoxPassword.Size = new System.Drawing.Size(119, 22);
             this.textBoxPassword.TabIndex = 17;
             // 
             // labelSeparator
             // 
             this.labelSeparator.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelSeparator.Location = new System.Drawing.Point(87, 67);
+            this.labelSeparator.Location = new System.Drawing.Point(116, 82);
+            this.labelSeparator.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSeparator.Name = "labelSeparator";
-            this.labelSeparator.Size = new System.Drawing.Size(381, 2);
+            this.labelSeparator.Size = new System.Drawing.Size(508, 2);
             this.labelSeparator.TabIndex = 29;
             // 
             // labelCompanyAddress
             // 
             this.labelCompanyAddress.AutoSize = true;
-            this.labelCompanyAddress.Location = new System.Drawing.Point(7, 106);
+            this.labelCompanyAddress.Location = new System.Drawing.Point(9, 158);
+            this.labelCompanyAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCompanyAddress.Name = "labelCompanyAddress";
-            this.labelCompanyAddress.Size = new System.Drawing.Size(41, 13);
+            this.labelCompanyAddress.Size = new System.Drawing.Size(52, 17);
             this.labelCompanyAddress.TabIndex = 31;
             this.labelCompanyAddress.Text = "Адрес:";
             // 
             // textCompanyAddress
             // 
-            this.textCompanyAddress.Location = new System.Drawing.Point(90, 103);
+            this.textCompanyAddress.Location = new System.Drawing.Point(120, 155);
+            this.textCompanyAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textCompanyAddress.Name = "textCompanyAddress";
-            this.textCompanyAddress.Size = new System.Drawing.Size(378, 20);
+            this.textCompanyAddress.Size = new System.Drawing.Size(503, 22);
             this.textCompanyAddress.TabIndex = 2;
             // 
             // numericQRCodeDotSize
             // 
-            this.numericQRCodeDotSize.Location = new System.Drawing.Point(275, 39);
+            this.numericQRCodeDotSize.Location = new System.Drawing.Point(367, 48);
+            this.numericQRCodeDotSize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericQRCodeDotSize.Maximum = new decimal(new int[] {
             8,
             0,
@@ -357,7 +393,7 @@
             0,
             0});
             this.numericQRCodeDotSize.Name = "numericQRCodeDotSize";
-            this.numericQRCodeDotSize.Size = new System.Drawing.Size(47, 20);
+            this.numericQRCodeDotSize.Size = new System.Drawing.Size(63, 22);
             this.numericQRCodeDotSize.TabIndex = 32;
             this.numericQRCodeDotSize.Value = new decimal(new int[] {
             5,
@@ -368,9 +404,10 @@
             // labelQRCodeDotSize
             // 
             this.labelQRCodeDotSize.AutoSize = true;
-            this.labelQRCodeDotSize.Location = new System.Drawing.Point(189, 43);
+            this.labelQRCodeDotSize.Location = new System.Drawing.Point(252, 53);
+            this.labelQRCodeDotSize.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelQRCodeDotSize.Name = "labelQRCodeDotSize";
-            this.labelQRCodeDotSize.Size = new System.Drawing.Size(80, 13);
+            this.labelQRCodeDotSize.Size = new System.Drawing.Size(103, 17);
             this.labelQRCodeDotSize.TabIndex = 33;
             this.labelQRCodeDotSize.Text = "Размер точки:";
             // 
@@ -378,22 +415,24 @@
             // 
             this.labelQRCode.AutoSize = true;
             this.labelQRCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelQRCode.Location = new System.Drawing.Point(102, 43);
+            this.labelQRCode.Location = new System.Drawing.Point(136, 53);
+            this.labelQRCode.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelQRCode.Name = "labelQRCode";
-            this.labelQRCode.Size = new System.Drawing.Size(62, 13);
+            this.labelQRCode.Size = new System.Drawing.Size(78, 17);
             this.labelQRCode.TabIndex = 34;
             this.labelQRCode.Text = "QR Code:";
             // 
             // numericQRCodeCorrectionLevel
             // 
-            this.numericQRCodeCorrectionLevel.Location = new System.Drawing.Point(421, 39);
+            this.numericQRCodeCorrectionLevel.Location = new System.Drawing.Point(561, 48);
+            this.numericQRCodeCorrectionLevel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericQRCodeCorrectionLevel.Maximum = new decimal(new int[] {
             3,
             0,
             0,
             0});
             this.numericQRCodeCorrectionLevel.Name = "numericQRCodeCorrectionLevel";
-            this.numericQRCodeCorrectionLevel.Size = new System.Drawing.Size(47, 20);
+            this.numericQRCodeCorrectionLevel.Size = new System.Drawing.Size(63, 22);
             this.numericQRCodeCorrectionLevel.TabIndex = 35;
             this.numericQRCodeCorrectionLevel.Value = new decimal(new int[] {
             2,
@@ -403,19 +442,60 @@
             // 
             // labelQRCodeCorrectionLevel
             // 
-            this.labelQRCodeCorrectionLevel.Location = new System.Drawing.Point(328, 36);
+            this.labelQRCodeCorrectionLevel.Location = new System.Drawing.Point(437, 44);
+            this.labelQRCodeCorrectionLevel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelQRCodeCorrectionLevel.Name = "labelQRCodeCorrectionLevel";
-            this.labelQRCodeCorrectionLevel.Size = new System.Drawing.Size(87, 27);
+            this.labelQRCodeCorrectionLevel.Size = new System.Drawing.Size(116, 33);
             this.labelQRCodeCorrectionLevel.TabIndex = 36;
             this.labelQRCodeCorrectionLevel.Text = "Уровень кор- рекции ошибок:";
+            // 
+            // labelCompanyUser
+            // 
+            this.labelCompanyUser.AutoSize = true;
+            this.labelCompanyUser.Location = new System.Drawing.Point(9, 128);
+            this.labelCompanyUser.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCompanyUser.Name = "labelCompanyUser";
+            this.labelCompanyUser.Size = new System.Drawing.Size(105, 17);
+            this.labelCompanyUser.TabIndex = 38;
+            this.labelCompanyUser.Text = "Пользователь:";
+            // 
+            // textCompanyUser
+            // 
+            this.textCompanyUser.Location = new System.Drawing.Point(120, 125);
+            this.textCompanyUser.Margin = new System.Windows.Forms.Padding(4);
+            this.textCompanyUser.Name = "textCompanyUser";
+            this.textCompanyUser.Size = new System.Drawing.Size(308, 22);
+            this.textCompanyUser.TabIndex = 37;
+            // 
+            // labelFRPlace
+            // 
+            this.labelFRPlace.AutoSize = true;
+            this.labelFRPlace.Location = new System.Drawing.Point(437, 128);
+            this.labelFRPlace.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelFRPlace.Name = "labelFRPlace";
+            this.labelFRPlace.Size = new System.Drawing.Size(53, 17);
+            this.labelFRPlace.TabIndex = 40;
+            this.labelFRPlace.Text = "Место:";
+            // 
+            // textFRPlace
+            // 
+            this.textFRPlace.Location = new System.Drawing.Point(504, 125);
+            this.textFRPlace.Margin = new System.Windows.Forms.Padding(4);
+            this.textFRPlace.Name = "textFRPlace";
+            this.textFRPlace.Size = new System.Drawing.Size(119, 22);
+            this.textFRPlace.TabIndex = 39;
             // 
             // FormSettings
             // 
             this.AcceptButton = this.buttonOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancel;
-            this.ClientSize = new System.Drawing.Size(477, 315);
+            this.ClientSize = new System.Drawing.Size(636, 415);
+            this.Controls.Add(this.labelFRPlace);
+            this.Controls.Add(this.textFRPlace);
+            this.Controls.Add(this.labelCompanyUser);
+            this.Controls.Add(this.textCompanyUser);
             this.Controls.Add(this.numericQRCodeCorrectionLevel);
             this.Controls.Add(this.labelQRCodeCorrectionLevel);
             this.Controls.Add(this.labelQRCode);
@@ -453,6 +533,7 @@
             this.Controls.Add(this.labelCompany);
             this.Controls.Add(this.textCompany);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormSettings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Настройки";
@@ -502,5 +583,9 @@
         private System.Windows.Forms.Label labelQRCode;
         private System.Windows.Forms.NumericUpDown numericQRCodeCorrectionLevel;
         private System.Windows.Forms.Label labelQRCodeCorrectionLevel;
+        private System.Windows.Forms.Label labelCompanyUser;
+        private System.Windows.Forms.TextBox textCompanyUser;
+        private System.Windows.Forms.Label labelFRPlace;
+        private System.Windows.Forms.TextBox textFRPlace;
     }
 }
